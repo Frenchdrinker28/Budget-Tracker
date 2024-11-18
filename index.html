@@ -9,7 +9,23 @@
     <body>
        <div class="container">
             <h1> Let's Track our Budget !</h1>
-            <
-       </div> 
+            <form id="transaction-form">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button type="submit">Add</button>
+            </form>
+        <div id="transactions"></div>
+
+        <div id="summary">
+            <p>Total Income: <span id="total-income">0</span></p>
+            <p>Total Expenses: <span id="total-expenses">0</span></p>
+            <p>Balance: <span id="balance">0</span></p>
+        </div>
+       </div>
+       <script src="app.js"></script> 
     </body>
 </html>
